@@ -8,4 +8,4 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
 window.setInterval(function() {
 	if (loaded) { document.body.className = "loaded"; } else { timer = true; }
-}, 2000);
+}, 3000);
