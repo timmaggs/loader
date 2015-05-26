@@ -1,11 +1,15 @@
+//Add the js class
+document.documentElement.className="js";
+
 //Write in vanilla
-var loaded = false;
-var timer = false;
+var l = false;
+var t = false;
 
 document.addEventListener("DOMContentLoaded", function(event) {
-	if (timer) { document.body.className = "loaded"; } else { loaded = true; }
+	if (t) { document.body.className = "loaded"; } else { l = true; }
 });
 
-window.setInterval(function() {
-	if (loaded) { document.body.className = "loaded"; } else { timer = true; }
+var i = setInterval(function() {
+	if (l) { document.body.className = "loaded"; } else { t = true; }
+	clearInterval(i);
 }, 3000);

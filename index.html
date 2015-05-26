@@ -8,16 +8,16 @@
 
         <title>Tim Maggs</title>
 
-        <link rel="icon" type="image/png" href="favicon.png" />
         <link rel="stylesheet" type="text/css" href="_css/core.css">
+        <link rel="stylesheet" type="text/css" href="_css/loader.css">
 
         <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
-        <script type="text/javascript">document.documentElement.className="js";var loaded=!1,timer=!1;document.addEventListener("DOMContentLoaded",function(){timer?document.body.className="loaded":loaded=!0}),window.setInterval(function(){loaded?document.body.className="loaded":timer=!0},3e3);</script>
+        <script type="text/javascript">document.documentElement.className="js";var l=!1,t=!1;document.addEventListener("DOMContentLoaded",function(){t?document.body.className="loaded":l=!0});var i=setInterval(function(){l?document.body.className="loaded":t=!0,clearInterval(i)},3e3);</script>
     </head>
     <body>
 
     	<div class="loader">
-    		<div class="polygon"></div>	
+            <svg class="polygon" xmlns="http://www.w3.org/2000/svg" version="1.1" x="0" y="0" width="100" height="100" viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve"><polygon points="100 100 10 90 0 10 95 5" fill="#FFFFFF"><animate attributeName="points" dur="3s" calcMode="spline" values="100 100 10 90 0 10 95 5; 98,92 6,96 3,8 100,0; 93,95 8,92 8,0 100,8; 99,90 1,92 4,5 92,2; 93,95 8,97 10,0 100,8; 100 100 10 90 0 10 95 5" keyTimes="0; 0.2; 0.4; 0.6; 0.8; 1" keySplines=".17 .52 .1 1; .17 .52 .1 1; .17 .52 .1 1; .17 .52 .1 1; .17 .52 .1 1" repeatCount="indefinite"/></polygon></svg>
     	</div>
 
     	<div class="wrapper">
